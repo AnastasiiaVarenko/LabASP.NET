@@ -1,0 +1,20 @@
+﻿@using Lab3.Models
+@model Post
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*Car - model, producent, pojemność silnika, moc, rodzaj silnika, nr rejestracyjny, właściciel*@
+<h1>Szczegóły</h1>
+<p>Zawartość</p>
+<h3>@Model.Content</h3>
+<p>Autor</p>
+<h3>@Model.Author</h3>
+<p>Data publikacji</p>
+<h3>@Model.PublicationDate</h3>
+<p>Tagi</p>
+<h3>@Model.Tags</h3>
+<p>Komentarz</p>
+<h3>@Model.Comment</h3>
+<a class="btn btn-secondary" asp-action="Index">Powrot</a>

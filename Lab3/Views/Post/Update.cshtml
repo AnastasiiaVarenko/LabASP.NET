@@ -1,0 +1,39 @@
+﻿@using Lab3.Models;
+@model Post
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Edytuj post</h1>
+<form asp-controller="Post" asp-action="Update" method="post">
+    <div class="mb-3">
+        <label asp-for="Content">Zawartość</label>
+        <input class="form-control" asp-for="Content" />
+        <span class="text-danger" asp-validation-for="Content"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Author">Autor</label>
+        <input class="form-control" asp-for="Author" />
+        <span class="text-danger" asp-validation-for="Author"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="PublicationDate">Data publikacji</label>
+        <input class="form-control" asp-for="PublicationDate" />
+        <span class="text-danger" asp-validation-for="PublicationDate"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Tags">Tagi</label>
+        <input class="form-control" asp-for="Tags" />
+        <span class="text-danger" asp-validation-for="Tags"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Comment">Komentarz</label>
+        <input class="form-control" asp-for="Comment" />
+        <span asp-validation-for="Comment"></span>
+    </div>
+    <div class="mb-3">
+        <button class="btn btn-primary" type="submit">Zapisz</button>
+    </div>
+</form>
+
